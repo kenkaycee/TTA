@@ -1,7 +1,5 @@
 """Write a program that allows you to enter 4 numbers and stores them in a file called “Numbers”
  Have a go at ‘w’ ‘r’  ‘a’"""
-import os 
-os.chdir('C:\\Users\\kezen\\OneDrive\\Documents\\GitHub\\TTA\\Home Learning Tasks\\Week 3 HL\\Python 3 HL')
 
 # write the file 
 #%%
