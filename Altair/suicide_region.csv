@@ -1,0 +1,352 @@
+"","Region","Year","Total_deaths","Rate"
+"1","North East",1981,320,15.3
+"2","North West",1981,855,15.4
+"3","Yorkshire and The Humber",1981,528,13.6
+"4","East Midlands",1981,360,11.6
+"5","West Midlands",1981,504,12.5
+"6","East of England",1981,517,13.6
+"7","London",1981,985,17.4
+"8","South East",1981,817,14.2
+"9","South West",1981,558,15.6
+"10","North East",1982,301,14.4
+"11","North West",1982,840,15.3
+"12","Yorkshire and The Humber",1982,589,15.1
+"13","East Midlands",1982,341,11.6
+"14","West Midlands",1982,497,12.3
+"15","East of England",1982,506,13.3
+"16","London",1982,878,15.6
+"17","South East",1982,804,13.8
+"18","South West",1982,491,13.6
+"19","North East",1983,275,13.1
+"20","North West",1983,766,14
+"21","Yorkshire and The Humber",1983,561,14.4
+"22","East Midlands",1983,385,12.6
+"23","West Midlands",1983,526,13
+"24","East of England",1983,494,12.7
+"25","London",1983,891,16
+"26","South East",1983,795,13.4
+"27","South West",1983,483,13.2
+"28","North East",1984,236,11.4
+"29","North West",1984,783,14.2
+"30","Yorkshire and The Humber",1984,556,13.9
+"31","East Midlands",1984,430,13.8
+"32","West Midlands",1984,496,12
+"33","East of England",1984,492,12.5
+"34","London",1984,862,15.5
+"35","South East",1984,836,14
+"36","South West",1984,569,15.3
+"37","North East",1985,282,13.3
+"38","North West",1985,810,14.6
+"39","Yorkshire and The Humber",1985,632,16.1
+"40","East Midlands",1985,415,13.1
+"41","West Midlands",1985,565,13.5
+"42","East of England",1985,564,14.1
+"43","London",1985,837,14.8
+"44","South East",1985,881,14.6
+"45","South West",1985,544,14.4
+"46","North East",1986,297,14.1
+"47","North West",1986,840,15
+"48","Yorkshire and The Humber",1986,613,15.4
+"49","East Midlands",1986,355,10.9
+"50","West Midlands",1986,520,12.4
+"51","East of England",1986,558,13.7
+"52","London",1986,786,13.9
+"53","South East",1986,800,13
+"54","South West",1986,556,14.4
+"55","North East",1987,259,12.2
+"56","North West",1987,826,14.6
+"57","Yorkshire and The Humber",1987,588,14.9
+"58","East Midlands",1987,411,12.8
+"59","West Midlands",1987,474,11
+"60","East of England",1987,532,12.7
+"61","London",1987,800,13.9
+"62","South East",1987,748,11.9
+"63","South West",1987,548,14.1
+"64","North East",1988,312,14.5
+"65","North West",1988,796,14
+"66","Yorkshire and The Humber",1988,604,14.9
+"67","East Midlands",1988,436,13.2
+"68","West Midlands",1988,573,13.2
+"69","East of England",1988,569,13.5
+"70","London",1988,852,15.1
+"71","South East",1988,866,13.6
+"72","South West",1988,563,14.1
+"73","North East",1989,257,11.6
+"74","North West",1989,712,12.2
+"75","Yorkshire and The Humber",1989,512,12.3
+"76","East Midlands",1989,419,12.4
+"77","West Midlands",1989,535,12.3
+"78","East of England",1989,520,12
+"79","London",1989,774,13.5
+"80","South East",1989,772,12.1
+"81","South West",1989,509,12.7
+"82","North East",1990,243,11.2
+"83","North West",1990,758,12.8
+"84","Yorkshire and The Humber",1990,520,12.3
+"85","East Midlands",1990,433,12.6
+"86","West Midlands",1990,537,12.1
+"87","East of England",1990,547,12.7
+"88","London",1990,756,13.1
+"89","South East",1990,823,12.7
+"90","South West",1990,576,14.2
+"91","North East",1991,251,11.3
+"92","North West",1991,793,13.6
+"93","Yorkshire and The Humber",1991,513,12
+"94","East Midlands",1991,422,12.3
+"95","West Midlands",1991,486,11
+"96","East of England",1991,566,13
+"97","London",1991,735,12.6
+"98","South East",1991,817,12.4
+"99","South West",1991,529,13
+"100","North East",1992,260,11.8
+"101","North West",1992,770,13
+"102","Yorkshire and The Humber",1992,545,12.9
+"103","East Midlands",1992,383,11
+"104","West Midlands",1992,507,11.3
+"105","East of England",1992,489,11.2
+"106","London",1992,722,12.3
+"107","South East",1992,860,13.1
+"108","South West",1992,553,13.5
+"109","North East",1993,259,11.8
+"110","North West",1993,724,12.1
+"111","Yorkshire and The Humber",1993,482,11.3
+"112","East Midlands",1993,401,11.6
+"113","West Midlands",1993,542,12.2
+"114","East of England",1993,486,11
+"115","London",1993,725,12.3
+"116","South East",1993,779,11.9
+"117","South West",1993,456,11.1
+"118","North East",1994,258,11.4
+"119","North West",1994,693,11.8
+"120","Yorkshire and The Humber",1994,495,11.6
+"121","East Midlands",1994,410,11.6
+"122","West Midlands",1994,482,10.7
+"123","East of England",1994,463,10.4
+"124","London",1994,705,11.9
+"125","South East",1994,754,11.4
+"126","South West",1994,462,11
+"127","North East",1995,275,12.2
+"128","North West",1995,737,12.3
+"129","Yorkshire and The Humber",1995,525,12.2
+"130","East Midlands",1995,373,10.6
+"131","West Midlands",1995,461,10.2
+"132","East of England",1995,461,10.3
+"133","London",1995,670,11.1
+"134","South East",1995,750,11.2
+"135","South West",1995,512,12.2
+"136","North East",1996,253,11.3
+"137","North West",1996,682,11.4
+"138","Yorkshire and The Humber",1996,477,11
+"139","East Midlands",1996,403,11.2
+"140","West Midlands",1996,447,9.9
+"141","East of England",1996,469,10.3
+"142","London",1996,630,10.4
+"143","South East",1996,732,10.8
+"144","South West",1996,501,11.9
+"145","North East",1997,256,11.3
+"146","North West",1997,739,12.4
+"147","Yorkshire and The Humber",1997,475,10.9
+"148","East Midlands",1997,342,9.6
+"149","West Midlands",1997,423,9.3
+"150","East of England",1997,416,9.2
+"151","London",1997,666,11.1
+"152","South East",1997,733,10.8
+"153","South West",1997,450,10.5
+"154","North East",1998,290,12.8
+"155","North West",1998,802,13.5
+"156","Yorkshire and The Humber",1998,542,12.5
+"157","East Midlands",1998,375,10.2
+"158","West Midlands",1998,474,10.3
+"159","East of England",1998,484,10.5
+"160","London",1998,781,12.5
+"161","South East",1998,765,11
+"162","South West",1998,479,11.3
+"163","North East",1999,258,11.5
+"164","North West",1999,790,13.3
+"165","Yorkshire and The Humber",1999,508,11.7
+"166","East Midlands",1999,409,11.3
+"167","West Midlands",1999,546,12.2
+"168","East of England",1999,445,9.6
+"169","London",1999,682,11
+"170","South East",1999,725,10.5
+"171","South West",1999,510,11.9
+"172","North East",2000,279,12.4
+"173","North West",2000,742,12.5
+"174","Yorkshire and The Humber",2000,456,10.6
+"175","East Midlands",2000,401,11
+"176","West Midlands",2000,543,11.9
+"177","East of England",2000,435,9.4
+"178","London",2000,622,10.1
+"179","South East",2000,738,10.6
+"180","South West",2000,510,11.8
+"181","North East",2001,248,11.2
+"182","North West",2001,719,12.2
+"183","Yorkshire and The Humber",2001,444,10.2
+"184","East Midlands",2001,397,10.7
+"185","West Midlands",2001,520,11.4
+"186","East of England",2001,438,9.4
+"187","London",2001,629,10.2
+"188","South East",2001,698,10
+"189","South West",2001,464,10.6
+"190","North East",2002,239,10.6
+"191","North West",2002,641,10.8
+"192","Yorkshire and The Humber",2002,455,10.4
+"193","East Midlands",2002,364,9.8
+"194","West Midlands",2002,465,10
+"195","East of England",2002,468,9.9
+"196","London",2002,629,9.9
+"197","South East",2002,723,10.4
+"198","South West",2002,452,10.3
+"199","North East",2003,272,12.2
+"200","North West",2003,637,10.7
+"201","Yorkshire and The Humber",2003,423,9.6
+"202","East Midlands",2003,374,10.1
+"203","West Midlands",2003,466,10.1
+"204","East of England",2003,450,9.4
+"205","London",2003,658,10.3
+"206","South East",2003,698,9.9
+"207","South West",2003,452,10.2
+"208","North East",2004,295,13.3
+"209","North West",2004,636,10.7
+"210","Yorkshire and The Humber",2004,472,10.7
+"211","East Midlands",2004,385,10.4
+"212","West Midlands",2004,454,9.8
+"213","East of England",2004,453,9.4
+"214","London",2004,627,9.9
+"215","South East",2004,701,9.8
+"216","South West",2004,490,11
+"217","North East",2005,242,10.8
+"218","North West",2005,678,11.2
+"219","Yorkshire and The Humber",2005,482,10.8
+"220","East Midlands",2005,367,9.6
+"221","West Midlands",2005,426,9.2
+"222","East of England",2005,448,9.2
+"223","London",2005,620,9.9
+"224","South East",2005,694,9.7
+"225","South West",2005,453,10.1
+"226","North East",2006,228,10
+"227","North West",2006,636,10.5
+"228","Yorkshire and The Humber",2006,403,9
+"229","East Midlands",2006,358,9.2
+"230","West Midlands",2006,411,8.8
+"231","East of England",2006,424,8.7
+"232","London",2006,588,9.3
+"233","South East",2006,671,9.3
+"234","South West",2006,459,10.2
+"235","North East",2007,217,9.6
+"236","North West",2007,638,10.5
+"237","Yorkshire and The Humber",2007,425,9.3
+"238","East Midlands",2007,345,8.9
+"239","West Midlands",2007,364,7.6
+"240","East of England",2007,423,8.5
+"241","London",2007,549,8.4
+"242","South East",2007,622,8.4
+"243","South West",2007,416,9.1
+"244","North East",2008,232,10.1
+"245","North West",2008,614,10.1
+"246","Yorkshire and The Humber",2008,454,10
+"247","East Midlands",2008,334,8.5
+"248","West Midlands",2008,466,9.7
+"249","East of England",2008,489,9.8
+"250","London",2008,591,8.7
+"251","South East",2008,666,9.1
+"252","South West",2008,442,9.6
+"253","North East",2009,237,10.4
+"254","North West",2009,706,11.5
+"255","Yorkshire and The Humber",2009,401,8.8
+"256","East Midlands",2009,373,9.4
+"257","West Midlands",2009,447,9.3
+"258","East of England",2009,423,8.3
+"259","London",2009,570,8.4
+"260","South East",2009,721,9.7
+"261","South West",2009,514,11.2
+"262","North East",2010,235,10.3
+"263","North West",2010,616,10.1
+"264","Yorkshire and The Humber",2010,380,8.3
+"265","East Midlands",2010,323,8.1
+"266","West Midlands",2010,450,9.4
+"267","East of England",2010,445,8.8
+"268","London",2010,574,8.4
+"269","South East",2010,683,9.1
+"270","South West",2010,496,10.7
+"271","North East",2011,273,11.9
+"272","North West",2011,675,10.9
+"273","Yorkshire and The Humber",2011,464,10
+"274","East Midlands",2011,365,9.2
+"275","West Midlands",2011,433,8.9
+"276","East of England",2011,483,9.4
+"277","London",2011,585,8.4
+"278","South East",2011,724,9.6
+"279","South West",2011,516,11
+"280","North East",2012,246,10.8
+"281","North West",2012,704,11.3
+"282","Yorkshire and The Humber",2012,482,10.4
+"283","East Midlands",2012,376,9.4
+"284","West Midlands",2012,453,9.2
+"285","East of England",2012,440,8.4
+"286","London",2012,577,8.3
+"287","South East",2012,716,9.3
+"288","South West",2012,519,11
+"289","North East",2013,295,13
+"290","North West",2013,716,11.6
+"291","Yorkshire and The Humber",2013,502,10.9
+"292","East Midlands",2013,385,9.6
+"293","West Midlands",2013,477,9.8
+"294","East of England",2013,456,8.8
+"295","London",2013,516,7.4
+"296","South East",2013,820,10.7
+"297","South West",2013,560,11.7
+"298","North East",2014,305,13.2
+"299","North West",2014,727,11.7
+"300","Yorkshire and The Humber",2014,451,9.7
+"301","East Midlands",2014,426,10.5
+"302","West Midlands",2014,571,11.6
+"303","East of England",2014,520,9.8
+"304","London",2014,552,7.8
+"305","South East",2014,794,10.2
+"306","South West",2014,536,11.1
+"307","North East",2015,247,10.9
+"308","North West",2015,674,10.8
+"309","Yorkshire and The Humber",2015,544,11.6
+"310","East Midlands",2015,399,9.8
+"311","West Midlands",2015,477,9.6
+"312","East of England",2015,494,9.3
+"313","London",2015,735,10.4
+"314","South East",2015,756,9.7
+"315","South West",2015,494,10.2
+"316","North East",2016,244,10.6
+"317","North West",2016,661,10.5
+"318","Yorkshire and The Humber",2016,469,9.9
+"319","East Midlands",2016,352,8.4
+"320","West Midlands",2016,446,8.9
+"321","East of England",2016,526,9.8
+"322","London",2016,580,7.8
+"323","South East",2016,754,9.6
+"324","South West",2016,543,11.2
+"325","North East",2017,248,10.8
+"326","North West",2017,634,10.1
+"327","Yorkshire and The Humber",2017,462,9.9
+"328","East Midlands",2017,341,8.1
+"329","West Midlands",2017,500,9.9
+"330","East of England",2017,468,8.7
+"331","London",2017,568,7.7
+"332","South East",2017,720,9.1
+"333","South West",2017,510,10.5
+"334","North East",2018,287,12.5
+"335","North West",2018,682,10.8
+"336","Yorkshire and The Humber",2018,577,12.2
+"337","East Midlands",2018,400,9.6
+"338","West Midlands",2018,514,10.2
+"339","East of England",2018,614,11.3
+"340","London",2018,661,8.8
+"341","South East",2018,720,9
+"342","South West",2018,566,11.5
+"343","North East",2019,266,11.5
+"344","North West",2019,709,11.1
+"345","Yorkshire and The Humber",2019,660,13.8
+"346","East Midlands",2019,456,10.8
+"347","West Midlands",2019,534,10.5
+"348","East of England",2019,626,11.6
+"349","London",2019,616,8.1
+"350","South East",2019,859,10.8
+"351","South West",2019,590,12
