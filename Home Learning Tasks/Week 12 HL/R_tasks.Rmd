@@ -1,0 +1,113 @@
+---
+title: "Week 13 Home Learning Tasks"
+author: "Kaycee"
+date: "1/31/2022"
+output: html_document
+---
+This is an Rmarkdown Document
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Task 1:
+Write an R program to create three vectors a, b, c with 5
+integers. Combine the three vectors to become a 3×5 matrix
+where each column represents a vector. Print the content of
+the matrix. Plot a graph and label correctly.
+
+```{r matrix}
+a = c(1,2,3,4,5)
+b = c(6,7,8,9,10)
+c = c(11,12,13,14,15)
+mat = matrix(c(a,b,c),
+nrow = 3,
+ncol =5)
+print(mat)
+
+# Plot the graph
+plot(mat, type = "l", xlab = "X", ylab = "Y")
+
+```
+
+## Task 2:
+Write a R program to create a Data frames which contain
+details of 5 employees and display the details. (Name, Age,
+Role and Length of service).
+
+
+
+```{r employee}
+# set vectors for name, age, role and length of service
+emp_name = c("Scott", "Adam", "Chloe", "Kaycee", "Shawn")
+age = c(21, 65, 45, 35, 50)
+role = c("Nurse", "Radiographer", "Psychologist", "Phsyiotherapist", "Doctor")
+len_service = c(6, 9, 8, 10, 25)
+
+# create the dataframe 
+employee = data.frame(emp_name, age, role, len_service)
+print(employee)
+
+```
+
+Import the GGPLOT 2 library and plot a graph using the qplot
+function. X axis is the sequence of 1:20 and the y axis is the x ^
+2. Label the graph appropriately.
+
+```{r ggplot}
+# import library 
+library(tidyverse)
+# create sequence 1 to 20
+x = seq(1,20)
+y = x ^ 2
+qplot(x,y, ylab = "X raised to power of 2")
+```
+
+Task 4
+Create a simple bar plot of five subjects
+
+```{r unordered barplot}
+# lets create unordered barplot of employee and their age, we will use their role to fill the bar
+employee %>% 
+  ggplot(aes(emp_name, age, fill=role))+
+  geom_bar(stat = "identity", show.legend = FALSE)+
+  xlab("Name")+
+  ylab("Age")+
+  ggtitle("Unordered barplot of employee and their age")+
+  theme_bw()
+```
+
+```{r ordered barplot}
+# sort the barplot using fct_reorder
+employee %>% 
+  ggplot(aes(fct_reorder(emp_name, age),age, fill=role))+
+  geom_bar(stat = "identity", show.legend = FALSE)+
+  xlab("Name")+
+  ylab("Age")+
+  ggtitle("Ordered barplot of employee and their age")+
+  theme_bw()
+```
+
+# Optional challenge
+
+Write a R program to print the numbers from 1 to 100
+and print "Fizz" for multiples of 3, print "Buzz" for
+multiples of 5, and print "FizzBuzz" for multiples of
+both.
+```{r car}
+for (i in 1:100){
+  if(i %% 3 == 0 & i %% 5 == 0) {print("FizzBuzz")}
+  else if(i %% 3 == 0) {print("Fizz")}
+  else if(i %% 5 == 0) {print("Buzz")}
+  else print(i)
+}
+```
+
+
+
+
+
+
+
+
+
+
