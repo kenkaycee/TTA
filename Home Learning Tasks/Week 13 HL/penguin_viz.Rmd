@@ -2,11 +2,13 @@
 title: "Week 13 HLT"
 author: "Kaycee"
 date: "2/1/2022"
-output: rmarkdown::github_document
+output:
+  html_document:
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, fig.keep = "asis")
 ```
 
 ## R Markdown
