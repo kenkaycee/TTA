@@ -2,12 +2,10 @@
 title: "Week 13 HLT"
 author: "Kaycee"
 date: "2/1/2022"
-output:
-  html_document:
-    keep_md: true
+output: github_document
 ---
 
-```{r setup, include=TRUE, results='asis', fig.show='asis'}
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
