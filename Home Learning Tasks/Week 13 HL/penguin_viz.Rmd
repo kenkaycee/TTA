@@ -8,7 +8,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, fig.keep = "asis")
+knitr::opts_chunk$set(echo = TRUE, fig.show  = "asis")
 ```
 
 ## R Markdown
