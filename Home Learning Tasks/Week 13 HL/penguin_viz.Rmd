@@ -1,0 +1,341 @@
+---
+title: "Week 13 HLT"
+author: "Kaycee"
+date: "2/1/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. 
+
+# Task: Use a meaningful data visualisation using this data.
+
+```{r mpg}
+library(tidyverse)
+library(palmerpenguins)
+
+```
+The palmerpenguins data contains size measurements, clutch observations, and blood isotope ratios for three penguin species observed on three islands in the Palmer Archipelago, Antarctica over a study period of three years. You can read more about the dataset on https://education.rstudio.com/blog/2020/07/palmerpenguins-cran/ 
+
+
+```{r penguins}
+# import the dataset 
+penguins = penguins
+
+# view structure of the data
+str(penguins)
+glimpse(penguins)
+
+# dimention of dataset
+dim(penguins)
+
+# Data Wrangling
+# summary statistics 
+library(skimr)
+skim(penguins)
+
+# check for missing values 
+sum(is.na(penguins)) # 19 missing values 
+
+# show number of missing values in each column
+colSums(is.na(penguins))  # the sex variables have 11 mising values 
+
+# lets remove null values 
+penguins = na.omit(penguins)
+
+# check to see if null values removed 
+colSums(is.na(penguins))
+
+```
+Data Visualisation 
+
+```{r penguin viz}
+# Scatter plot of bill length vs flipper length
+penguins %>% 
+  ggplot(aes(bill_length_mm, flipper_length_mm, col="red"))+
+  geom_point(show.legend = FALSE)+
+  ggtitle("Scatter plot of Penguin's Bill length vs Flipper length")+
+  xlab("Bill Length (mm)")+
+  ylab("Flipper Length (mm)")+
+  theme_bw()
+# Appears that there is positive relationship between Bill length and flipper length 
+
+cor(penguins$bill_length_mm, penguins$flipper_length_mm) # correlation coefficient of 0.65
+
+```
+
+```{r}
+# Scatter plot of bill depth vs flipper length
+penguins %>% 
+  ggplot(aes(bill_depth_mm, flipper_length_mm, color = "red"))+
+  geom_point(show.legend = FALSE)+
+  ggtitle("Scatter plot of Penguin's Bill Depth vs Flipper length")+
+  xlab("Bill Depth (mm)")+
+  ylab("Flipper Length (mm)")+
+  theme_bw()
+
+# Appears that as Bill depth increases, flipper length reduces. Notice the existence of two different clusters
+
+cor(penguins$bill_depth_mm, penguins$flipper_length_mm) # correlation coefficient of -0.58
+
+```
+
+# map color by sex
+
+```{r }
+penguins %>% 
+  ggplot(aes(bill_depth_mm, flipper_length_mm, col = sex))+
+  geom_point()+
+  ggtitle("Scatter plot of Penguin's Bill length vs Flipper length")+
+  xlab("Bill Depth (mm)")+
+  ylab("Flipper Length (mm)")+
+  theme_bw()
+
+# graph shows that male penguins higher flipper length and bill depth 
+
+```
+
+
+# map color by species
+```{r }
+penguins %>% 
+  ggplot(aes(bill_depth_mm, flipper_length_mm, color = species))+
+  geom_point()+
+  ggtitle("Scatter plot of Penguin's Bill length vs Flipper length")+
+  xlab("Bill Depth (mm)")+
+  ylab("Flipper Length (mm)")+
+  theme_bw()
+
+# Graph shows that Adelie species have much higher flipper length than the other species 
+```
+# map color by the island that the penguins live
+
+```{r }
+penguins %>% 
+  ggplot(aes(bill_depth_mm, flipper_length_mm, color = island))+
+  geom_point()+
+  ggtitle("Scatter plot of Penguin's Bill length vs Flipper length")+
+  xlab("Bill Depth (mm)")+
+  ylab("Flipper Length (mm)")+
+  theme_bw()
+
+# Graph shows that penguins that live in Biscoe island have higher flipper length than the other species 
+```
+
+# facet by species & gender
+
+```{r }
+penguins %>% 
+  ggplot(aes(bill_depth_mm, flipper_length_mm, color = sex))+
+  geom_point()+
+  ggtitle("Scatter plot of Penguin's Bill length vs Flipper length")+
+  xlab("Bill Depth (mm)")+
+  ylab("Flipper Length (mm)")+
+  facet_grid(~species)+
+  theme_bw()
+
+# Graph shows that male penguins have longer flipper than female and Gentoo species have longer flipper 
+```
+
+# facetting by sex and islands
+```{r }
+penguins %>% 
+  ggplot(aes(bill_depth_mm, flipper_length_mm, color = sex))+
+  geom_point()+
+  ggtitle("Scatter plot of Penguin's Bill length vs Flipper length")+
+  xlab("Bill Depth (mm)")+
+  ylab("Flipper Length (mm)")+
+  facet_grid(~island)+
+  theme_bw()
+
+
+```
+
+```{r }
+penguins %>% 
+  ggplot(aes(bill_depth_mm, flipper_length_mm, col = species, size = body_mass_g))+
+  geom_point()+
+  ggtitle("Scatter plot of Penguin's Bill length vs Flipper length")+
+  xlab("Bill Depth (mm)")+
+  ylab("Flipper Length (mm)")+
+  theme_bw()+
+  labs(size = "Body Mass (grams)")
+
+# graph shows that Adelie species have higher body mass and flipper length 
+```
+
+# is there a difference in the body mass of the penguins 
+```{r }
+penguins %>% 
+  ggplot(aes(bill_depth_mm, flipper_length_mm, col = species, size = body_mass_g))+
+  geom_point()+
+  ggtitle("Scatter plot of Penguin's Bill length vs Flipper length")+
+  xlab("Bill Depth (mm)")+
+  ylab("Flipper Length (mm)")+
+  theme_bw()
+
+# graph shows that gentor penguins larger body mass
+
+```
+
+# Map by island and body mass
+```{r }
+penguins %>% 
+  ggplot(aes(bill_depth_mm, flipper_length_mm, col = island, size = body_mass_g))+
+  geom_point()+
+  ggtitle("Scatter plot of Penguin's Bill length vs Flipper length")+
+  xlab("Bill Depth (mm)")+
+  ylab("Flipper Length (mm)")+
+  theme_bw()+
+  labs(size = "Body Mass (grams)")
+
+# graph shows that  penguins that lives in Biscoe islands have larger body mass
+```
+
+# Is there a difference in size of the body mass by gender
+
+```{r }
+penguins %>% 
+  ggplot(aes(bill_length_mm, flipper_length_mm, col = sex, size = body_mass_g))+
+  geom_point()+
+  ggtitle("Scatter plot of Penguin's Bill length vs Flipper length")+
+  xlab("Bill Depth (mm)")+
+  ylab("Flipper Length (mm)")+
+  theme_bw()+
+  facet_wrap(~species)+
+  labs(size = "Body Mass (grams)")
+
+# Appears that male penguins are larger
+```
+
+
+
+
+# lets build a classification model to predict the gender of the penguins
+
+```{r penguins modelling}
+# drop column year- wont be used for our modelling 
+
+penguins = penguins %>% select(-year)
+
+# import tidymodel library (for machine learning)
+library(tidymodels)
+
+# split dataset into training and testing set
+set.seed(100) # ensures reproducibility
+penguins_split = initial_split(penguins, prop = 0.75, strata = sex)
+penguins_train = training(penguins_split)
+penguins_test = testing(penguins_split)
+```
+# Create 10 K fold resampling 
+```{r }
+set.seed(100)
+kfolds = vfold_cv(penguins_train, v = 10)
+kfolds
+
+```
+
+# Lets compare two models: A simple Logistic Regression and Random Forest model using Todymodel workflow
+Step 1: Specify the models
+
+```{r }
+# logistic reg
+glm_spec = logistic_reg() %>% 
+  set_mode("classification") %>% 
+  set_engine("glm")
+
+# Random Forest Model
+rand_spec = rand_forest() %>% 
+  set_mode("classification") %>% 
+  set_engine("ranger")
+
+```
+
+# Step 2: Set workflow pipeline 
+
+```{r }
+penguins_wf = workflow() %>% 
+  add_formula(sex~.) # we will model sex against all other variables 
+```
+# Step 3: Fit the Models against each of the resamples 
+
+Fit Logistic model
+```{r }
+glm_fit = penguins_wf %>% 
+  add_model(glm_spec) %>% 
+  fit_resamples(
+    resamples = kfolds,
+    control = control_resamples(save_pred = TRUE)
+  )
+glm_fit
+```
+
+Fit Random Forest model
+```{r }
+rand_fit = penguins_wf %>% 
+  add_model(rand_spec) %>% 
+  fit_resamples(
+    resamples = kfolds,
+    control = control_resamples(save_pred = TRUE)
+  )
+rand_fit
+```
+# Evaluate the results 
+```{r }
+# Performance metrics of Logistic model 
+glm_fit %>% collect_metrics() # 92% Training Accuracy
+
+# Performance metrics of Random Forest model 
+rand_fit %>% collect_metrics() # 92% Training Accuracy 
+```
+
+# Both models have similar accuracy. Folowing Ocam Razor Principle, we will pick the logistic model which is simpler and more explainable. We will fit on the training data and evaluate on the testing data using last_fit 
+
+```{r }
+penguins_final = penguins_wf %>% 
+  add_model(glm_spec) %>% 
+  last_fit(penguins_split)
+penguins_final
+```
+
+```{r }
+
+penguins_final %>% collect_metrics()
+```
+# The Logistic model has an accuracy of 91% on the test dataset. It is not overfitting 
+
+```{r }
+# get the confusion matrix 
+penguins_final %>% 
+  collect_predictions() %>% 
+  conf_mat(sex, .pred_class)
+```
+
+# Lets get the odd ratios of the predictors to see which variables were significant in predicting the gender of the penguins 
+
+```{r }
+penguins_final$.workflow[[1]] %>% 
+  tidy(exponentiate = TRUE)
+```
+The largest odds ratio is for islandTorgersen, with the second largest for bill depth. An increase of 1 mm in bill depth corresponds to 5x higher odds of being male. The characteristics of a penguin’s bill must be associated with their sex. 
+
+```{r }
+penguins %>% 
+  ggplot(aes(bill_depth_mm, bill_length_mm, color = sex, size = body_mass_g))+
+  geom_point()+
+  facet_wrap(~species)+
+  labs(color = "Sex", size = "Body Mass (grams)")+
+  theme_bw()
+
+```
+
+
+# Female and male penguins are much more seperated.
+
+
+
